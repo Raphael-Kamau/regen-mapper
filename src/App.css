@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.landing-bg {
+  background: url('./assets/forest.png') center/cover no-repeat;
+  backdrop-filter: blur(6px);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 40px;
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-landing {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+
+/* MapView */
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.join-bg {
+  background-image: url('./assets/join-campaign.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.join-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.join-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Contact Page */
+.contact-bg {
+  background-image: url('./assets/contact.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.contact-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* soft overlay */
+  z-index: 1;
+}
+
+.contact-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
 }

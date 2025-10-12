@@ -125,16 +125,13 @@ Note: these are starting recommendations — pick implementations that fit your 
   - Impact dashboard: aggregate metrics (total trees, CO₂ offset estimate, SDG progress).
   - Admin panel (optional for MVP): manage contributors, zones, and campaign visibility.
 
-  ## Technology Stack (suggested)
+  ## Technology Stack 
 
-  - Frontend: React, Bootstrap (or Tailwind), Mapbox GL JS or Leaflet
+  - Frontend: React, Bootstrap,  Leaflet
   - Backend: Flask (Python) with a hosted DB (Supabase, Railway Postgres, or MongoDB)
   - AI: Claude.ai (or OpenAI), Bolt.new for lightweight automation/workflows
   - Geospatial data/APIs: Sentinel Hub, OpenStreetMap, other GIS APIs
   - Deployment: Railway, GitHub Codespaces for development
-
-  Note: these are starting recommendations — pick implementations that fit your constraints
-  (budget, free tiers, data access).
 
   ## Requirements Breakdown
 
@@ -152,7 +149,7 @@ Note: these are starting recommendations — pick implementations that fit your 
 
   1.  Clone the repository
 
-      git clone https://github.com/your-username/ReGen-Mapper.git
+      git clone https://github.com/Raphael-Kamau/regen-mapper.git
       cd ReGen-Mapper
 
   2.  Frontend (example using Node/npm)
@@ -184,14 +181,12 @@ Note: these are starting recommendations — pick implementations that fit your 
 
   ## Data & Privacy
 
-  - When collecting contributor data, store only what is needed. Consider anonymization options
-    for community privacy and comply with local regulations.
+  - When collecting contributor data, store only what is needed. Consider anonymization options for community privacy and comply with local regulations.
   - Document assumptions for CO₂ calculations and make formulas transparent in the dashboard.
 
   ## Contribution
 
-  Open to collaborators: data scientists, GIS experts, environmental researchers, frontend and
-  backend developers. To contribute:
+  Open to collaborators: data scientists, GIS experts, environmental researchers, frontend and backend developers. To contribute:
 
   1.  Fork the repo
   2.  Create a feature branch: git checkout -b feature/your-feature
@@ -208,12 +203,3 @@ Note: these are starting recommendations — pick implementations that fit your 
 
   ***
 
-  If you want, I can:
-
-  - tailor this README for a specific stack (e.g., full MERN or Python-only),
-  - generate a `package.json` and minimal frontend/backend skeleton,
-  - or expand the Impact Metrics section with a sample CO₂ calculation.
-
-  Tell me which of the above you'd like next.
-
-Tell me which of the above you'd like next.
