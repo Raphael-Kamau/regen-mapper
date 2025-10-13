@@ -103,3 +103,34 @@
   max-width: 600px;
   width: 100%;
 }
+
+/* About Section */
+.about-section {
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+}
+
+.about-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.about-section p.lead {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.site-footer {
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
