@@ -94,14 +94,17 @@
   background-color: #1c6b4c;
 }
 
-.footer-icon {
+.footer-link {
   color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.footer-icon:hover {
+.footer-link:hover {
   color: #00a86b;
 }
+
 
 
 /* join page */
