@@ -91,18 +91,16 @@
 
 /* Footer */
 .footer-bg {
-  background-color: #0a3d2e;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #1c6b4c;
 }
 
 .footer-icon {
-  color: #a8e6cf;
-  text-decoration: none;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
 .footer-icon:hover {
-  color: #ffffff;
+  color: #00a86b;
 }
 
 
