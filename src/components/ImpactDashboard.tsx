@@ -3,6 +3,10 @@ import { useEffect, useState } from 'react';
 import { supabase } from '../lib/supabaseClient';
 import { Container, Row, Col, Card, Spinner } from 'react-bootstrap';
 import '../App.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const ImpactDashboard = () => {
   const [stats, setStats] = useState({ totalTrees: 0, zones: 0 });
@@ -22,7 +26,7 @@ const ImpactDashboard = () => {
   }, []);
 
   return (
-    <Container className="glass-card">
+    <Container className="glass-card" data-aos="fade-in">
       <h2 className="mb-4">🌍 Impact Dashboard</h2>
       <p>Every tree planted is a story of hope, resilience, and regeneration. Through community-driven mapping and transparent logging, we're building a living archive of restoration—zone by zone, root by root.</p>
       <ul>

@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
 import { supabase } from '../lib/supabaseClient';
+import 'aos/dist/aos.css';
+import '../App.css';
 
 interface PlantingFormData {
     species: string;
@@ -74,7 +76,7 @@ const PlantingLog = () => {
     };
 
     return (
-        <Container className='glass-card'>
+        <Container className='glass-card' data-aos="fade-in">
             <h2 className='mb-4'>🌱 Log a Tree Planting</h2>
             <p>Every time you plant and log, you become part of our growing family. A family rooted in restoration, united by purpose, and connected through every seed sown.</p>
 

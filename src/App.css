@@ -1,7 +1,9 @@
-.landing-bg {
+.vh-75 {
   background: url('./assets/forest.png') center/cover no-repeat;
   backdrop-filter: blur(6px);
   color: white;
+  padding-bottom: 1rem;
+  height: 100vh;
 }
 
 .logo {
@@ -40,38 +42,6 @@
   box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
 
-.join-bg {
-  background-image: url('./assets/join-campaign.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  padding: 4rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.join-bg::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-.join-content {
-  position: relative;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(8px);
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 600px;
-  text-align: center;
-}
-
 /* Contact Page */
 .contact-bg {
   background-image: url('./assets/contact.png');
@@ -106,8 +76,8 @@
 
 /* About Section */
 .about-section {
-  background: rgba(0, 0, 0, 0.45);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.85);
+  color: #000;
 }
 
 .about-section h2 {
@@ -120,17 +90,85 @@
 }
 
 /* Footer */
-.site-footer {
-  background: rgba(0,0,0,0.85);
-  color: #fff;
-  padding: 1rem 0;
+.footer-bg {
+  background-color: #0a3d2e;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.site-footer a {
-  color: #fff;
+.footer-icon {
+  color: #a8e6cf;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.site-footer a:hover {
-  text-decoration: underline;
+.footer-icon:hover {
+  color: #ffffff;
+}
+
+
+/* join page */
+.join-bg {
+  background: linear-gradient(to right, #0a3d2e, #1c6b4c);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-content {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  color: #fff;
+}
+
+
+.impact-section h3 {
+  font-size: 2rem;
+  color: #00a86b;
+}
+
+.how-it-works-section h4 {
+  font-weight: bold;
+  color: #1c6b4c;
+}
+
+.cta-section {
+  background: linear-gradient(to right, #0a3d2e, #1c6b4c);
+  color: #fff;
+  border-radius: 12px;
+}
+
+.impact-section h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00a86b;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.impact-section h3:hover {
+  transform: scale(1.05);
+}
+
+.impact-section p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.impact-section .stat-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(0, 168, 107, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.impact-section .stat-box:hover {
+  box-shadow: 0 0 15px rgba(0, 168, 107, 0.4);
 }

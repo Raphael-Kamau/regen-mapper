@@ -8,6 +8,7 @@ import PlantingLog from './components/PlantingLog';
 import ImpactDashboard from './components/ImpactDashboard';
 import Contact from './components/Contact';
 import JoinCampaign from './components/JoinCampaign';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
         {view === 'contact' && <Contact />}
         {view === 'join' && <JoinCampaign />}
       </Container>
+
+      <Footer />
     </div>
   );
 }
